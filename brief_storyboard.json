@@ -1,0 +1,205 @@
+{
+  "meta": {
+    "videoId": "storyboard-from-brief",
+    "defaultFps": 30,
+    "defaultResolution": { "width": 1920, "height": 1080 },
+    "totalDurationSec": 105
+  },
+  "slides": [
+    {
+      "id": "intro-hook",
+      "title": "Why Turn Research into Stories?",
+      "durationSec": 15,
+      "elements": [
+        {
+          "kind": "heading",
+          "content": "Bridging Data and Narrative",
+          "animationIn": "fade",
+          "startSec": 0
+        },
+        {
+          "kind": "paragraph",
+          "content": "Our tool transforms raw research into animated storyboards using Remotion.",
+          "animationIn": "wipe-right",
+          "startSec": 4
+        }
+      ],
+      "narration": "We'll show you how our Storyboard tool uses artificial intelligence and Remotion to convert complex research into dynamic, engaging videos.",
+      "subtitles": "same",
+      "audioTracks": {
+        "backgroundMusic": "uplift-intro.mp3",
+        "sfx": []
+      },
+      "transitionToNext": "push-left",
+      "directorNotes": "Open with a fade-in on the heading for 3 seconds then wipe-in the paragraph. Use Remotion Composition to create the slide container; nest two Sequence components for the heading and paragraph. Set a calm background colour (e.g., pale blue) and a motivating melody at low volume. Cross-fade into the next slide."
+    },
+    {
+      "id": "stage-a-ingest",
+      "title": "Stage A: Ingest \u2013 From Outline to Narrative",
+      "durationSec": 20,
+      "elements": [
+        {
+          "kind": "bulletList",
+          "content": [
+            "Digest outlines and diagrams",
+            "Generate a narrative outline",
+            "Frame problem \u2192 insight \u2192 solution"
+          ],
+          "animationIn": "stagger-up",
+          "startSec": 2
+        }
+      ],
+      "narration": "First we ingest your research. The tool reads outlines, bullet points and diagrams to build a clear narrative outline that frames the problem, insight, and solution.",
+      "subtitles": "same",
+      "audioTracks": {
+        "backgroundMusic": "none",
+        "sfx": [
+          { "src": "whoosh-soft.mp3", "atSec": 3 },
+          { "src": "whoosh-soft.mp3", "atSec": 5 },
+          { "src": "whoosh-soft.mp3", "atSec": 7 }
+        ]
+      },
+      "transitionToNext": "cross-fade",
+      "directorNotes": "Use a Sequence for the bullet list; each bullet should animate upward with 0.5\u202fsecond delay. Over a darkened background, emphasise the narrative outline concept. Trigger a soft whoosh SFX with each bullet to highlight the transition. Show an icon representing ingestion beside the title. Keep the pacing moderate; allow viewers to read each bullet before moving on."
+    },
+    {
+      "id": "stage-b-structuring",
+      "title": "Stage B: Structuring \u2013 Scenes & Storyboard",
+      "durationSec": 15,
+      "elements": [
+        {
+          "kind": "bulletList",
+          "content": [
+            "Chunk the story into scenes",
+            "Define timing & element order",
+            "Emit YAML & JSON outputs"
+          ],
+          "animationIn": "stagger-up",
+          "startSec": 1.5
+        }
+      ],
+      "narration": "Next, the story is structured into scenes. We declare the timing and order for every element, then emit human\u2011readable YAML and machine\u2011readable JSON storyboards.",
+      "subtitles": "same",
+      "audioTracks": {
+        "backgroundMusic": "light-tech.mp3",
+        "sfx": []
+      },
+      "transitionToNext": "push-left",
+      "directorNotes": "Nest a Sequence within the slide for each bullet point and time them evenly. Use icons for YAML and JSON next to the final bullet. Show sample YAML/JSON code snippets behind a semi-transparent overlay. Remind viewers of the default FPS and resolution. Maintain a subtle technological soundscape and cross\u2011fade into the next slide."
+    },
+    {
+      "id": "stage-c-production",
+      "title": "Stage C: Production \u2013 Build with Remotion",
+      "durationSec": 20,
+      "elements": [
+        {
+          "kind": "bulletList",
+          "content": [
+            "Compose slides with React",
+            "Sequence elements by time",
+            "Add voice\u2011over, music & transitions"
+          ],
+          "animationIn": "stagger-up",
+          "startSec": 2
+        },
+        {
+          "kind": "code",
+          "content": "const composition = <Composition fps={30} width={1920} height={1080}><Sequence ... /></Composition>;",
+          "animationIn": "fade",
+          "startSec": 7
+        }
+      ],
+      "narration": "During production, our tool builds your video using React and Remotion. We compose each slide as a composition and sequence, then layer in the voice\u2011over, music and transitions to bring the narrative alive.",
+      "subtitles": "condensed",
+      "audioTracks": {
+        "backgroundMusic": "none",
+        "sfx": [ { "src": "typing.mp3", "atSec": 8 } ]
+      },
+      "transitionToNext": "cross-fade",
+      "directorNotes": "Split the slide into two parts: the bullet list appears first, followed by a code snippet that fades in. Use monospace font for the code and highlight the Composition and Sequence tags. While the code appears, play a subtle typing sound. Employ Remotion's Sequence components to time the bullet list and code snippet. Keep the background neutral, focusing attention on the content."
+    },
+    {
+      "id": "stage-d-render",
+      "title": "Stage D: Render & Review",
+      "durationSec": 10,
+      "elements": [
+        {
+          "kind": "bulletList",
+          "content": [
+            "Render videos & thumbnails",
+            "Generate contact sheet",
+            "Iterate with stakeholders"
+          ],
+          "animationIn": "stagger-up",
+          "startSec": 1.5
+        }
+      ],
+      "narration": "Finally we render your video and thumbnails, generate a contact sheet, and share it for review so you can iterate with your team quickly.",
+      "subtitles": "same",
+      "audioTracks": {
+        "backgroundMusic": "uplift-soft.mp3",
+        "sfx": []
+      },
+      "transitionToNext": "push-left",
+      "directorNotes": "Keep this slide brisk. Show icons for MP4 files and thumbnails while the bullets appear. Mention the Remotion CLI command `npx remotion render`. The contact sheet should be shown as a small grid. End with a quick push-left transition to the next slide."
+    },
+    {
+      "id": "prompt-schemas",
+      "title": "Master Prompt & Schemas",
+      "durationSec": 15,
+      "elements": [
+        {
+          "kind": "heading",
+          "content": "A Master Prompt for Storyboard\u2011AI",
+          "animationIn": "fade",
+          "startSec": 0
+        },
+        {
+          "kind": "bulletList",
+          "content": [
+            "Define narrative arc: hook, tension, resolution",
+            "Specify slides with elements & timing",
+            "Output YAML & JSON storyboards"
+          ],
+          "animationIn": "stagger-up",
+          "startSec": 3
+        }
+      ],
+      "narration": "Our master prompt steers the AI to decide the narrative arc, break the story into slides with elements, timing and audio, and produce both YAML and JSON storyboards from a single prompt.",
+      "subtitles": "same",
+      "audioTracks": {
+        "backgroundMusic": "thoughtful.mp3",
+        "sfx": []
+      },
+      "transitionToNext": "cross-fade",
+      "directorNotes": "Begin with a heading fade\u2011in to emphasise the master prompt concept. Then animate the bullets up sequentially. Illustrate a prompt box with placeholders like `<<<RESEARCH>>>`. Emphasise that YAML and JSON are isomorphic; perhaps add small icons representing each format. Use a thoughtful, minimal soundtrack. Provide enough time for viewers to grasp the concept before transitioning."
+    },
+    {
+      "id": "conclusion",
+      "title": "Ready to Create Your Own Storyboard",
+      "durationSec": 10,
+      "elements": [
+        {
+          "kind": "heading",
+          "content": "Create. Animate. Share.",
+          "animationIn": "scale-up",
+          "startSec": 0
+        },
+        {
+          "kind": "paragraph",
+          "content": "Harness the power of AI and Remotion to turn your research into engaging video narratives. Let's build your story together.",
+          "animationIn": "fade",
+          "startSec": 3
+        }
+      ],
+      "narration": "Now you're ready to transform research into dynamic videos. Let our tool handle the technical details while you focus on your story.",
+      "subtitles": "same",
+      "audioTracks": {
+        "backgroundMusic": "triumphant-soft.mp3",
+        "sfx": []
+      },
+      "transitionToNext": "fade-to-black",
+      "directorNotes": "Conclude with an uplifting tone. Scale the heading up for impact and fade in the paragraph afterwards. Keep the background bright and inspiring. Increase the music volume by 3\u202fdB towards the end. Fade to black as the last words finish."
+    }
+  ]
+}
